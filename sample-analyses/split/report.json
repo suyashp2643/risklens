@@ -1,0 +1,80 @@
+{
+  "format": "risklens-investigation-v1",
+  "mode": "synthetic",
+  "label": "SYNTHETIC DEMONSTRATION",
+  "input_hash": "9650b96cc5ee67779b673ab38fa80fdb467e9d895cbed3cff793d6df28f04e5c",
+  "input_file_hashes": {
+    "calendar.csv": "393525f35db7751b311ac06eb1867da10bdc1ad5764f990bee3decf46c979600",
+    "corporate_actions.csv": "f67fc82e1c7cd995db67b2b5fa8f485756bacbc1945b2d95dc6af94203ecd92f",
+    "instruments.csv": "3da6064748890300aaa73f1a595fbdc0eddefa3e0c315188910805e23847d52a",
+    "portfolio.json": "279b3fc5227c7f526ff2464b0950e254fcf0ead28b0985b9417da1ab9c811a7c",
+    "prices.csv": "12d58106e4cbe460f6888418697dc410e2ba09b2d58d20560bbba4d5abe8bfda",
+    "provenance.json": "79c02fb0434341f3404b8fa03848ffbb51a3678bec2aabf60e938d27112dfd6d"
+  },
+  "policy": {
+    "unchanged_sessions": 5,
+    "large_return_threshold": 0.2,
+    "split_relative_tolerance": 0.03
+  },
+  "dataset_valid": true,
+  "calculation_blocked": false,
+  "validation_error": null,
+  "issues": [
+    {
+      "instrument": "SYN_TECH",
+      "dates": [
+        "2024-07-12",
+        "2024-07-15"
+      ],
+      "rule": "large_return",
+      "observed_values": {
+        "prior_price": 92.76384469,
+        "price": 46.27507145,
+        "simple_return": -0.5011518592761768,
+        "absolute_threshold": 0.2
+      },
+      "category": "market_movement_review",
+      "severity": "warning",
+      "calculation_blocking": false,
+      "suggested_review_action": "Check news, source prices and corporate actions. A large market move alone is not a confirmed data error.",
+      "issue_id": "28c0d32cc898b51e142bfe51a0193e4a305f1f0c091517a24287b988ac570030"
+    },
+    {
+      "instrument": "SYN_TECH",
+      "dates": [
+        "2024-07-12",
+        "2024-07-15"
+      ],
+      "rule": "potential_unadjusted_split",
+      "observed_values": {
+        "prior_price": 92.76384469,
+        "price": 46.27507145,
+        "price_ratio": 0.4988481407238232,
+        "candidate_factor": 2,
+        "target_ratio": 0.5,
+        "relative_distance": 0.002303718552353562,
+        "relative_tolerance": 0.03,
+        "same_date_split_ledger": [
+          {
+            "date": "2024-07-15",
+            "instrument": "SYN_TECH",
+            "action": "split",
+            "value": "2",
+            "evidence": "Synthetic fixture ledger: illustrative 2-for-1 split; clean series is already adjusted."
+          }
+        ]
+      },
+      "category": "suspected_data_issue",
+      "severity": "warning",
+      "calculation_blocking": false,
+      "suggested_review_action": "Verify adjustment basis and authoritative corporate-action terms. Near-ratio and supplied ledger evidence are clues, not permission to repair.",
+      "issue_id": "1058e9c261f9b6c35b9bde77c8741d1411578414e2ff6a933bfc7280d88cf36e"
+    }
+  ],
+  "issue_count": 2,
+  "limitations": [
+    "No fixture metadata or clean reference is used for detection.",
+    "No prices are filled, dropped, overwritten or automatically repaired.",
+    "Suspicion does not prove an error; an explicit calendar defines expected sessions."
+  ]
+}

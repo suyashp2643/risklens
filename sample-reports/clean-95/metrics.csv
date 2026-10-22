@@ -1,0 +1,8 @@
+mode,currency,confidence,observations,metric,value,unit,horizon_days,engine_version
+synthetic,USD,0.95,755,cumulative_return,-0.0019456485369053755,decimal_fraction,,0.2.0
+synthetic,USD,0.95,755,annualized_sample_volatility,0.11397217782789498,decimal_fraction,,0.2.0
+synthetic,USD,0.95,755,maximum_drawdown,0.23258497194762495,decimal_fraction,,0.2.0
+synthetic,USD,0.95,755,historical_one_day_var,0.01179731098405904,decimal_fraction,1,0.2.0
+synthetic,USD,0.95,755,historical_one_day_expected_shortfall,0.014923887854071395,decimal_fraction,1,0.2.0
+synthetic,USD,0.95,755,historical_one_day_var_currency,1179.7310984059038,USD,1,0.2.0
+synthetic,USD,0.95,755,historical_one_day_expected_shortfall_currency,1492.3887854071395,USD,1,0.2.0

@@ -1,0 +1,277 @@
+{
+  "baseline_zip_sha256": "450d7e6de1de771cbfa193b57e459c0533f5aebc7221b41ab7b6d16a8e3bef55",
+  "unchanged_files": [
+    {
+      "path": "risklens/.gitignore",
+      "sha256": "ecf6b3c718ebf7c797a68af07be2242fdd95bfae293806537ab8932f9aa8dcb8"
+    },
+    {
+      "path": "risklens/alembic.ini",
+      "sha256": "9381652a03a6869cfaf399020b97d403aecdc9e7d63baf3ddf34bc59211fae86"
+    },
+    {
+      "path": "risklens/backend/src/risklens/__init__.py",
+      "sha256": "91447944015cec709e8aa7655f7e9d64e1e4508e7023a57fe3746911c0fc6fed"
+    },
+    {
+      "path": "risklens/backend/src/risklens/calculations.py",
+      "sha256": "610362b75ca241709a1b5c734d63f171e316b30c4b4804ea9cee374524d18035"
+    },
+    {
+      "path": "risklens/backend/src/risklens/demo.py",
+      "sha256": "d3aff9e86ffac641a1e7e0933bd449925067f2036740e0276ad687347c243faf"
+    },
+    {
+      "path": "risklens/backend/src/risklens/ingestion.py",
+      "sha256": "2eb4237b452c50e3a5e152b7b10beb575d26bc54026f4433480aeca8720dbab0"
+    },
+    {
+      "path": "risklens/backend/src/risklens/migrations/env.py",
+      "sha256": "13f384c01310a03f34b077afcf6ab4d29a1bf908656d5190891dad599199b61f"
+    },
+    {
+      "path": "risklens/backend/src/risklens/migrations/versions/0001_immutable_storage.py",
+      "sha256": "5870cad9d70ef469dc261446d3c178ed1bec10cde59aef94081e2da5a655ca1e"
+    },
+    {
+      "path": "risklens/backend/src/risklens/migrations/versions/0002_bound_approvals.py",
+      "sha256": "1b39641d31350c6166539fc9ecfddff23816dde0fa5b31841ba4bb0af14f45f4"
+    },
+    {
+      "path": "risklens/backend/src/risklens/reporting.py",
+      "sha256": "b0f091d3a81941a8626a020f44e375fc58d93c7c598387f38bade03dd4670de9"
+    },
+    {
+      "path": "risklens/backend/src/risklens/reviews.py",
+      "sha256": "a8f09c1b2a0ac779e1bff1846a16cac7a1b68fcf9598f48261b511c9c2030030"
+    },
+    {
+      "path": "risklens/backend/src/risklens/schemas.py",
+      "sha256": "e99cf070f7a93d82c20369c99432a6a911fc929eba6b3ecb6b6b87b302a0c620"
+    },
+    {
+      "path": "risklens/backend/src/risklens/snapshots.py",
+      "sha256": "0d6aaa488bf2b53a863b4aef7e27c9ef93d47e7ed859779449fe9991919a355a"
+    },
+    {
+      "path": "risklens/backend/src/risklens/storage.py",
+      "sha256": "ac217dae13f6b76a938185d3073ed980bd646984334007ff92cd6856ec2af77a"
+    },
+    {
+      "path": "risklens/docs/correction-review-template.json",
+      "sha256": "4c3e4af982b82da5aa27ff10ef8b4c8305701c55be4b1a64f38118330de1f3ab"
+    },
+    {
+      "path": "risklens/docs/methodology.md",
+      "sha256": "752d43dc282cc9afbb39196936cec6ef248f47857d414cc0827ede9ba87f80d2"
+    },
+    {
+      "path": "risklens/docs/persistence.md",
+      "sha256": "a53d6b717f662c1b65938a74f0c41742d3aaedf48b70990e509cb5a0f587749b"
+    },
+    {
+      "path": "risklens/docs/sample-report.md",
+      "sha256": "98f9d681670a4989847670afd6e4b6e7d0eb828b34932a5e377d3945e503c919"
+    },
+    {
+      "path": "risklens/docs/schemas.md",
+      "sha256": "baa9feb7ea2d4f18197814925bb33c34341996e09c7dc93d17f79880270dccf6"
+    },
+    {
+      "path": "risklens/frontend/README.md",
+      "sha256": "7136b417621227e2804543a6bcf39716f4859194268842491ac4db33c0a846b5"
+    },
+    {
+      "path": "risklens/requirements-lock.txt",
+      "sha256": "9077bab5d8aaa7e83e6f439ab7c3500aa5ecce69765ccaa5ce1812e19e975459"
+    },
+    {
+      "path": "risklens/sample-data/demo/clean/calendar.csv",
+      "sha256": "393525f35db7751b311ac06eb1867da10bdc1ad5764f990bee3decf46c979600"
+    },
+    {
+      "path": "risklens/sample-data/demo/clean/corporate_actions.csv",
+      "sha256": "f67fc82e1c7cd995db67b2b5fa8f485756bacbc1945b2d95dc6af94203ecd92f"
+    },
+    {
+      "path": "risklens/sample-data/demo/clean/instruments.csv",
+      "sha256": "3da6064748890300aaa73f1a595fbdc0eddefa3e0c315188910805e23847d52a"
+    },
+    {
+      "path": "risklens/sample-data/demo/clean/portfolio.json",
+      "sha256": "279b3fc5227c7f526ff2464b0950e254fcf0ead28b0985b9417da1ab9c811a7c"
+    },
+    {
+      "path": "risklens/sample-data/demo/clean/prices.csv",
+      "sha256": "f8cafb9b65125f504a2cd9d1eba641233ad0dc205dcbc9b9ea855532868c3e14"
+    },
+    {
+      "path": "risklens/sample-data/demo/clean/provenance.json",
+      "sha256": "79c02fb0434341f3404b8fa03848ffbb51a3678bec2aabf60e938d27112dfd6d"
+    },
+    {
+      "path": "risklens/sample-data/demo/duplicate/calendar.csv",
+      "sha256": "393525f35db7751b311ac06eb1867da10bdc1ad5764f990bee3decf46c979600"
+    },
+    {
+      "path": "risklens/sample-data/demo/duplicate/corporate_actions.csv",
+      "sha256": "f67fc82e1c7cd995db67b2b5fa8f485756bacbc1945b2d95dc6af94203ecd92f"
+    },
+    {
+      "path": "risklens/sample-data/demo/duplicate/fixture.json",
+      "sha256": "2f0942bda84e46f13364db37d12af727b9a3c90ddff5c2df74f38fe4bdc59716"
+    },
+    {
+      "path": "risklens/sample-data/demo/duplicate/instruments.csv",
+      "sha256": "3da6064748890300aaa73f1a595fbdc0eddefa3e0c315188910805e23847d52a"
+    },
+    {
+      "path": "risklens/sample-data/demo/duplicate/portfolio.json",
+      "sha256": "279b3fc5227c7f526ff2464b0950e254fcf0ead28b0985b9417da1ab9c811a7c"
+    },
+    {
+      "path": "risklens/sample-data/demo/duplicate/prices.csv",
+      "sha256": "241b49f642c2a3c0fcf533a697fe15b0ff38c80efa61620438ea1a69aa3a069c"
+    },
+    {
+      "path": "risklens/sample-data/demo/duplicate/provenance.json",
+      "sha256": "79c02fb0434341f3404b8fa03848ffbb51a3678bec2aabf60e938d27112dfd6d"
+    },
+    {
+      "path": "risklens/sample-data/demo/manifest.json",
+      "sha256": "78ec79f9cb961ffd6e937c5bbbe35ea3ba5e434c8d857aa88b5158b4bd6836f9"
+    },
+    {
+      "path": "risklens/sample-data/demo/missing/calendar.csv",
+      "sha256": "393525f35db7751b311ac06eb1867da10bdc1ad5764f990bee3decf46c979600"
+    },
+    {
+      "path": "risklens/sample-data/demo/missing/corporate_actions.csv",
+      "sha256": "f67fc82e1c7cd995db67b2b5fa8f485756bacbc1945b2d95dc6af94203ecd92f"
+    },
+    {
+      "path": "risklens/sample-data/demo/missing/fixture.json",
+      "sha256": "c50435c096855752a1ce0aa0ba5ff4a3abb9c714aa8c813d3d900b613f83f5b8"
+    },
+    {
+      "path": "risklens/sample-data/demo/missing/instruments.csv",
+      "sha256": "3da6064748890300aaa73f1a595fbdc0eddefa3e0c315188910805e23847d52a"
+    },
+    {
+      "path": "risklens/sample-data/demo/missing/portfolio.json",
+      "sha256": "279b3fc5227c7f526ff2464b0950e254fcf0ead28b0985b9417da1ab9c811a7c"
+    },
+    {
+      "path": "risklens/sample-data/demo/missing/prices.csv",
+      "sha256": "768e85175f2362bbe715c253355c31ca438aa9b18a4dd415cc389360ec49d325"
+    },
+    {
+      "path": "risklens/sample-data/demo/missing/provenance.json",
+      "sha256": "79c02fb0434341f3404b8fa03848ffbb51a3678bec2aabf60e938d27112dfd6d"
+    },
+    {
+      "path": "risklens/sample-data/demo/split/calendar.csv",
+      "sha256": "393525f35db7751b311ac06eb1867da10bdc1ad5764f990bee3decf46c979600"
+    },
+    {
+      "path": "risklens/sample-data/demo/split/corporate_actions.csv",
+      "sha256": "f67fc82e1c7cd995db67b2b5fa8f485756bacbc1945b2d95dc6af94203ecd92f"
+    },
+    {
+      "path": "risklens/sample-data/demo/split/fixture.json",
+      "sha256": "b688da4e7c3fc0db8e959ad2a7962c25e0811cf48539fd265192521a28f8963e"
+    },
+    {
+      "path": "risklens/sample-data/demo/split/instruments.csv",
+      "sha256": "3da6064748890300aaa73f1a595fbdc0eddefa3e0c315188910805e23847d52a"
+    },
+    {
+      "path": "risklens/sample-data/demo/split/portfolio.json",
+      "sha256": "279b3fc5227c7f526ff2464b0950e254fcf0ead28b0985b9417da1ab9c811a7c"
+    },
+    {
+      "path": "risklens/sample-data/demo/split/prices.csv",
+      "sha256": "12d58106e4cbe460f6888418697dc410e2ba09b2d58d20560bbba4d5abe8bfda"
+    },
+    {
+      "path": "risklens/sample-data/demo/split/provenance.json",
+      "sha256": "79c02fb0434341f3404b8fa03848ffbb51a3678bec2aabf60e938d27112dfd6d"
+    },
+    {
+      "path": "risklens/sample-data/demo/stale/calendar.csv",
+      "sha256": "393525f35db7751b311ac06eb1867da10bdc1ad5764f990bee3decf46c979600"
+    },
+    {
+      "path": "risklens/sample-data/demo/stale/corporate_actions.csv",
+      "sha256": "f67fc82e1c7cd995db67b2b5fa8f485756bacbc1945b2d95dc6af94203ecd92f"
+    },
+    {
+      "path": "risklens/sample-data/demo/stale/fixture.json",
+      "sha256": "49515b7736b13ee8397fdd4e1c699368e221e8793cce947eadd86a995702d175"
+    },
+    {
+      "path": "risklens/sample-data/demo/stale/instruments.csv",
+      "sha256": "3da6064748890300aaa73f1a595fbdc0eddefa3e0c315188910805e23847d52a"
+    },
+    {
+      "path": "risklens/sample-data/demo/stale/portfolio.json",
+      "sha256": "279b3fc5227c7f526ff2464b0950e254fcf0ead28b0985b9417da1ab9c811a7c"
+    },
+    {
+      "path": "risklens/sample-data/demo/stale/prices.csv",
+      "sha256": "9d626c0eab3dead12a2fafcbc2361638c07177e6f92dee1dfe132fd8cff48b49"
+    },
+    {
+      "path": "risklens/sample-data/demo/stale/provenance.json",
+      "sha256": "79c02fb0434341f3404b8fa03848ffbb51a3678bec2aabf60e938d27112dfd6d"
+    },
+    {
+      "path": "risklens/sample-reports/clean-95/daily.csv",
+      "sha256": "05bd69f5c53eb3e7dac0bd36c4893686d6b4ef0de50e57fe0feb5cd7588e8249"
+    },
+    {
+      "path": "risklens/sample-reports/clean-95/metadata.json",
+      "sha256": "345a6df4e9a95c0f3112852dc1928b1395285a4ff81684d0bcb8165167d0addd"
+    },
+    {
+      "path": "risklens/sample-reports/clean-95/metrics.csv",
+      "sha256": "df950bf8084a4ffe613fd0b563f9b4e41944a0bc30c59f6e39f109d932471990"
+    },
+    {
+      "path": "risklens/sample-reports/clean-95/report.json",
+      "sha256": "64f2919ac7676efdce43138dee598cb51da8733350ccad48b4d5421c0bef7ac6"
+    },
+    {
+      "path": "risklens/scripts/demo_stage3.py",
+      "sha256": "4ddea822325ac511af3b66c84cd625792e69468d591d56e678a7778d315bbbf0"
+    },
+    {
+      "path": "risklens/tests/test_stage1.py",
+      "sha256": "3b491ddee509f4500029cb809ad55af4bff7bc7721b5185c18dde721b1ed850b"
+    },
+    {
+      "path": "risklens/tests/test_stage2.py",
+      "sha256": "2cd0fb7d08efb8608fd5e1a509ad824e92ded3a347a1d9ffc52fef1ddfd7a0da"
+    },
+    {
+      "path": "risklens/tests/test_stage3.py",
+      "sha256": "14f9ccd298fc76ad62e1f93255c62eeef30511d23ba82f356ea7b5cc33845832"
+    },
+    {
+      "path": "risklens/tests/test_stage3_postgres.py",
+      "sha256": "c039ea3b06293754dd24a1195a3adb59058eff338d63d159d93b9e0933aedd97"
+    }
+  ],
+  "intentional_modified_files": [
+    "risklens/README.md",
+    "risklens/backend/src/risklens/cli.py",
+    "risklens/docs/architecture.md",
+    "risklens/docs/verification.md",
+    "risklens/pyproject.toml"
+  ],
+  "preserved_local_fixes": [
+    "risklens/backend/src/risklens/storage.py",
+    "risklens/backend/src/risklens/migrations/versions/0001_immutable_storage.py",
+    "risklens/tests/test_stage3_postgres.py"
+  ]
+}

@@ -1,0 +1,5 @@
+instrument,sector,currency
+SYN_TECH,Technology,USD
+SYN_BANK,Financials,USD
+SYN_HEALTH,Healthcare,USD
+SYN_ENERGY,Energy,USD

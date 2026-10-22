@@ -1,0 +1,11 @@
+{
+  "record_id": "REPLACE_WITH_UNIQUE_REVIEW_ID",
+  "approved_by": "REPLACE_WITH_REVIEWER_NAME",
+  "approved_at": "REPLACE_WITH_ACTUAL_TIMEZONE_AWARE_APPROVAL_TIME",
+  "decision": "pending",
+  "reason": "REPLACE_WITH_REASON_FOR_THE_CORRECTION",
+  "evidence": "REPLACE_WITH_REVIEWED_EVIDENCE_AND_HASHES",
+  "parent_snapshot_id": "REPLACE_WITH_PARENT_SNAPSHOT_UUID",
+  "parent_input_hash": "REPLACE_WITH_PARENT_INPUT_SHA256",
+  "proposed_input_hash": "REPLACE_WITH_PROPOSED_INPUT_SHA256"
+}

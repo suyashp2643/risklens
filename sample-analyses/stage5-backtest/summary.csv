@@ -1,0 +1,8 @@
+metric,value,unit
+observations,505,count
+exception_count,30,count
+exception_rate,0.0594059405940594,decimal_fraction
+expected_exception_count,25.25000000000002,count
+likelihood_ratio,0.8894592459375019,statistic
+p_value,0.3456238891838988,probability
+degrees_of_freedom,1,count

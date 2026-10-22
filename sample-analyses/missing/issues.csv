@@ -1,0 +1,2 @@
+mode,input_hash,issue_id,instrument,dates,rule,category,severity,calculation_blocking,observed_values,suggested_review_action
+synthetic,fbcc07b76a10dee80d31831cbca4a8338c21d2aa09ca3fb2e3c73bcc27dbb966,9178845829d41e40525dcf333d11d9fc0e683c712aff9c7cd2d515558c2d4b4a,SYN_HEALTH,"[""2024-05-06""]",missing_observation,confirmed_integrity_error,error,True,"{""expected_calendar_dates"":[""2024-05-06""]}",Check exchange calendar/source coverage. These dates are expected sessions under the supplied calendar; do not forward-fill.

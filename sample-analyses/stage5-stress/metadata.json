@@ -1,0 +1,84 @@
+{
+  "stage": 5,
+  "kind": "hypothetical_stress",
+  "engine_version": "0.2.0",
+  "analysis_version": "0.5.0",
+  "input_hash": "d3a98d4cb986c3cc40f9053077492088c3b68fe35d38cf68a04cbae91557a7cf",
+  "input_file_hashes": {
+    "prices.csv": "f8cafb9b65125f504a2cd9d1eba641233ad0dc205dcbc9b9ea855532868c3e14",
+    "instruments.csv": "3da6064748890300aaa73f1a595fbdc0eddefa3e0c315188910805e23847d52a",
+    "calendar.csv": "393525f35db7751b311ac06eb1867da10bdc1ad5764f990bee3decf46c979600",
+    "corporate_actions.csv": "f67fc82e1c7cd995db67b2b5fa8f485756bacbc1945b2d95dc6af94203ecd92f",
+    "portfolio.json": "279b3fc5227c7f526ff2464b0950e254fcf0ead28b0985b9417da1ab9c811a7c",
+    "provenance.json": "79c02fb0434341f3404b8fa03848ffbb51a3678bec2aabf60e938d27112dfd6d"
+  },
+  "mode": "synthetic",
+  "label": "SYNTHETIC DEMONSTRATION \u2014 fictional prices and securities",
+  "portfolio_definition": {
+    "base_currency": "USD",
+    "valuation": 100000.0,
+    "weights_as_of": "2025-11-24",
+    "convention": "constant_weight_daily_rebalanced",
+    "weights": [
+      {
+        "instrument": "SYN_TECH",
+        "weight": 0.4
+      },
+      {
+        "instrument": "SYN_BANK",
+        "weight": 0.3
+      },
+      {
+        "instrument": "SYN_HEALTH",
+        "weight": 0.2
+      },
+      {
+        "instrument": "SYN_ENERGY",
+        "weight": 0.1
+      }
+    ]
+  },
+  "limitations": [
+    "Synthetic timestamps do not reconstruct the historical information set.",
+    "No costs, taxes, liquidity or FX simulation; supplied current weights are hypothetical historical holdings.",
+    "Small evaluation samples and small expected exception counts weaken asymptotic coverage inference.",
+    "A high Kupiec p-value is not proof of reliability or exception independence."
+  ],
+  "provenance": {
+    "mode": "synthetic",
+    "source": "RiskLens deterministic generator v0.1.0; NumPy PCG64 seed 1729",
+    "acquired_at": "2026-01-01T00:00:00Z",
+    "currency": "USD",
+    "start_date": "2023-01-02",
+    "end_date": "2025-11-24",
+    "adjustment_basis": "Synthetic split/dividend-adjusted levels; no real corporate actions or market prices.",
+    "calendar_assumption": "756 synthetic weekday sessions; real exchange holidays deliberately not modeled.",
+    "observation_timestamps_available": false
+  },
+  "configuration": {
+    "scenario": {
+      "name": "SYNTHETIC sector decline with explicit technology override",
+      "instrument_shocks": {
+        "SYN_TECH": -0.3
+      },
+      "sector_shocks": {
+        "Technology": -0.2,
+        "Financials": -0.1,
+        "Healthcare": -0.05,
+        "Energy": -0.15
+      }
+    },
+    "overlap_rule": "instrument overrides sector; no addition",
+    "coverage": "all registered instruments, including zero weights",
+    "valuation_basis": "starting portfolio valuation",
+    "shock_units": "decimal simple return",
+    "pnl_sign": "positive gain, negative loss",
+    "horizon": "single simultaneous hypothetical shock"
+  },
+  "portfolio": {
+    "decimal_return": -0.175,
+    "percent": -17.5,
+    "currency_amount": -17500.0
+  },
+  "content_hash": "c704b7fe323ea86ce1f0350912024916d922637e9e96f28fc957d55e89312d75"
+}

@@ -1,0 +1,5 @@
+instrument,sector,weight,shock,shock_source,overridden_sector_shock,decimal_return,percent,currency_amount,mode,engine_version,analysis_version,input_hash
+SYN_BANK,Financials,0.3,-0.1,sector,,-0.03,-3.0,-3000.0,synthetic,0.2.0,0.5.0,d3a98d4cb986c3cc40f9053077492088c3b68fe35d38cf68a04cbae91557a7cf
+SYN_ENERGY,Energy,0.1,-0.15,sector,,-0.015,-1.5,-1500.0,synthetic,0.2.0,0.5.0,d3a98d4cb986c3cc40f9053077492088c3b68fe35d38cf68a04cbae91557a7cf
+SYN_HEALTH,Healthcare,0.2,-0.05,sector,,-0.010000000000000002,-1.0000000000000002,-1000.0000000000002,synthetic,0.2.0,0.5.0,d3a98d4cb986c3cc40f9053077492088c3b68fe35d38cf68a04cbae91557a7cf
+SYN_TECH,Technology,0.4,-0.3,instrument,-0.2,-0.12,-12.0,-12000.0,synthetic,0.2.0,0.5.0,d3a98d4cb986c3cc40f9053077492088c3b68fe35d38cf68a04cbae91557a7cf

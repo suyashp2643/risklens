@@ -1,0 +1,63 @@
+{
+  "engine_version": "0.2.0",
+  "stage": 2,
+  "mode": "synthetic",
+  "label": "SYNTHETIC DEMONSTRATION \u2014 fictional prices and securities",
+  "provenance": {
+    "mode": "synthetic",
+    "source": "RiskLens deterministic generator v0.1.0; NumPy PCG64 seed 1729",
+    "acquired_at": "2026-01-01T00:00:00Z",
+    "currency": "USD",
+    "start_date": "2023-01-02",
+    "end_date": "2025-11-24",
+    "adjustment_basis": "Synthetic split/dividend-adjusted levels; no real corporate actions or market prices.",
+    "calendar_assumption": "756 synthetic weekday sessions; real exchange holidays deliberately not modeled.",
+    "observation_timestamps_available": false
+  },
+  "portfolio": {
+    "base_currency": "USD",
+    "valuation": 100000.0,
+    "weights_as_of": "2025-11-24",
+    "convention": "constant_weight_daily_rebalanced",
+    "weights": [
+      {
+        "instrument": "SYN_TECH",
+        "weight": 0.4
+      },
+      {
+        "instrument": "SYN_BANK",
+        "weight": 0.3
+      },
+      {
+        "instrument": "SYN_HEALTH",
+        "weight": 0.2
+      },
+      {
+        "instrument": "SYN_ENERGY",
+        "weight": 0.1
+      }
+    ]
+  },
+  "configuration": {
+    "confidence": 0.95,
+    "trading_days_per_year": 252,
+    "horizon_days": 1,
+    "quantile_method": "empirical_inverse_cdf",
+    "es_method": "fractional_worst_tail_mass",
+    "minimum_observations": 100,
+    "minimum_tail_observations": 5,
+    "required_observations": 100,
+    "loss_sign": "loss = -simple_return; negative VaR retained",
+    "fraction_units": "decimal; 0.01 means 1%",
+    "currency_loss_basis": "portfolio.valuation; not terminal simulated wealth",
+    "historical_convention": "constant_weight_daily_rebalanced; current weights are a hypothetical historical strategy, not historical holdings",
+    "drawdown_sign": "positive peak-to-trough loss magnitude, initial wealth included"
+  },
+  "observations": 755,
+  "tail_mass": 37.750000000000036,
+  "limitations": [
+    "No transaction costs, taxes, slippage or intraday losses.",
+    "Valid suspicious prices are retained; investigation engine is unfinished.",
+    "This export is not an immutable snapshot or verified replay."
+  ]
+}

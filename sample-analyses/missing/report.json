@@ -1,0 +1,47 @@
+{
+  "format": "risklens-investigation-v1",
+  "mode": "synthetic",
+  "label": "SYNTHETIC DEMONSTRATION",
+  "input_hash": "fbcc07b76a10dee80d31831cbca4a8338c21d2aa09ca3fb2e3c73bcc27dbb966",
+  "input_file_hashes": {
+    "calendar.csv": "393525f35db7751b311ac06eb1867da10bdc1ad5764f990bee3decf46c979600",
+    "corporate_actions.csv": "f67fc82e1c7cd995db67b2b5fa8f485756bacbc1945b2d95dc6af94203ecd92f",
+    "instruments.csv": "3da6064748890300aaa73f1a595fbdc0eddefa3e0c315188910805e23847d52a",
+    "portfolio.json": "279b3fc5227c7f526ff2464b0950e254fcf0ead28b0985b9417da1ab9c811a7c",
+    "prices.csv": "768e85175f2362bbe715c253355c31ca438aa9b18a4dd415cc389360ec49d325",
+    "provenance.json": "79c02fb0434341f3404b8fa03848ffbb51a3678bec2aabf60e938d27112dfd6d"
+  },
+  "policy": {
+    "unchanged_sessions": 5,
+    "large_return_threshold": 0.2,
+    "split_relative_tolerance": 0.03
+  },
+  "dataset_valid": false,
+  "calculation_blocked": true,
+  "validation_error": "missing expected observations: [(datetime.date(2024, 5, 6), 'SYN_HEALTH')] (total 1)",
+  "issues": [
+    {
+      "instrument": "SYN_HEALTH",
+      "dates": [
+        "2024-05-06"
+      ],
+      "rule": "missing_observation",
+      "observed_values": {
+        "expected_calendar_dates": [
+          "2024-05-06"
+        ]
+      },
+      "category": "confirmed_integrity_error",
+      "severity": "error",
+      "calculation_blocking": true,
+      "suggested_review_action": "Check exchange calendar/source coverage. These dates are expected sessions under the supplied calendar; do not forward-fill.",
+      "issue_id": "9178845829d41e40525dcf333d11d9fc0e683c712aff9c7cd2d515558c2d4b4a"
+    }
+  ],
+  "issue_count": 1,
+  "limitations": [
+    "No fixture metadata or clean reference is used for detection.",
+    "No prices are filled, dropped, overwritten or automatically repaired.",
+    "Suspicion does not prove an error; an explicit calendar defines expected sessions."
+  ]
+}

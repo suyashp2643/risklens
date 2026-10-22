@@ -1,0 +1,9 @@
+{
+  "affected_dates": [
+    "2024-09-23"
+  ],
+  "instrument": "SYN_ENERGY",
+  "intent": "Intentionally corrupted synthetic data; not an approved correction.",
+  "kind": "duplicate",
+  "parent": "clean"
+}

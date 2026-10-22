@@ -1,0 +1,196 @@
+{
+  "stage": 5,
+  "kind": "window_replay",
+  "engine_version": "0.2.0",
+  "analysis_version": "0.5.0",
+  "input_hash": "d3a98d4cb986c3cc40f9053077492088c3b68fe35d38cf68a04cbae91557a7cf",
+  "input_file_hashes": {
+    "prices.csv": "f8cafb9b65125f504a2cd9d1eba641233ad0dc205dcbc9b9ea855532868c3e14",
+    "instruments.csv": "3da6064748890300aaa73f1a595fbdc0eddefa3e0c315188910805e23847d52a",
+    "calendar.csv": "393525f35db7751b311ac06eb1867da10bdc1ad5764f990bee3decf46c979600",
+    "corporate_actions.csv": "f67fc82e1c7cd995db67b2b5fa8f485756bacbc1945b2d95dc6af94203ecd92f",
+    "portfolio.json": "279b3fc5227c7f526ff2464b0950e254fcf0ead28b0985b9417da1ab9c811a7c",
+    "provenance.json": "79c02fb0434341f3404b8fa03848ffbb51a3678bec2aabf60e938d27112dfd6d"
+  },
+  "mode": "synthetic",
+  "label": "SYNTHETIC DEMONSTRATION \u2014 fictional prices and securities",
+  "portfolio_definition": {
+    "base_currency": "USD",
+    "valuation": 100000.0,
+    "weights_as_of": "2025-11-24",
+    "convention": "constant_weight_daily_rebalanced",
+    "weights": [
+      {
+        "instrument": "SYN_TECH",
+        "weight": 0.4
+      },
+      {
+        "instrument": "SYN_BANK",
+        "weight": 0.3
+      },
+      {
+        "instrument": "SYN_HEALTH",
+        "weight": 0.2
+      },
+      {
+        "instrument": "SYN_ENERGY",
+        "weight": 0.1
+      }
+    ]
+  },
+  "limitations": [
+    "Synthetic timestamps do not reconstruct the historical information set.",
+    "No costs, taxes, liquidity or FX simulation; supplied current weights are hypothetical historical holdings.",
+    "Small evaluation samples and small expected exception counts weaken asymptotic coverage inference.",
+    "A high Kupiec p-value is not proof of reliability or exception independence."
+  ],
+  "provenance": {
+    "mode": "synthetic",
+    "source": "RiskLens deterministic generator v0.1.0; NumPy PCG64 seed 1729",
+    "acquired_at": "2026-01-01T00:00:00Z",
+    "currency": "USD",
+    "start_date": "2023-01-02",
+    "end_date": "2025-11-24",
+    "adjustment_basis": "Synthetic split/dividend-adjusted levels; no real corporate actions or market prices.",
+    "calendar_assumption": "756 synthetic weekday sessions; real exchange holidays deliberately not modeled.",
+    "observation_timestamps_available": false
+  },
+  "configuration": {
+    "start_price_date": "2023-01-02",
+    "end_price_date": "2023-01-16",
+    "scenario": {
+      "type": "observed_window",
+      "start": "2023-01-02",
+      "end": "2023-01-16"
+    },
+    "rebalancing": "constant_weight_daily_rebalanced",
+    "valuation_basis": "starting portfolio valuation",
+    "compounding": "product(1 + daily weighted simple return)",
+    "contributions": "sum(start-of-day wealth * weight * instrument return); relative to starting valuation",
+    "pnl_sign": "positive gain, negative loss"
+  },
+  "daily": [
+    {
+      "date": "2023-01-03",
+      "portfolio_return": -0.008281616192499975,
+      "wealth_index": 0.9917183838075,
+      "currency_pnl": -828.1616192499974
+    },
+    {
+      "date": "2023-01-04",
+      "portfolio_return": -0.007311639417118742,
+      "wealth_index": 0.9844672965817718,
+      "currency_pnl": -725.1087225728211
+    },
+    {
+      "date": "2023-01-05",
+      "portfolio_return": 0.010322156026328721,
+      "wealth_index": 0.9946291216199068,
+      "currency_pnl": 1016.182503813508
+    },
+    {
+      "date": "2023-01-06",
+      "portfolio_return": 0.003601768990329102,
+      "wealth_index": 0.9982115459470358,
+      "currency_pnl": 358.2424327128853
+    },
+    {
+      "date": "2023-01-09",
+      "portfolio_return": -0.008139383424626067,
+      "wealth_index": 0.9900867194356842,
+      "currency_pnl": -812.4826511351664
+    },
+    {
+      "date": "2023-01-10",
+      "portfolio_return": 0.0024078537533532614,
+      "wealth_index": 0.9924707034592225,
+      "currency_pnl": 238.39840235384295
+    },
+    {
+      "date": "2023-01-11",
+      "portfolio_return": -0.002427043843973853,
+      "wealth_index": 0.9900619335480674,
+      "currency_pnl": -240.87699111551052
+    },
+    {
+      "date": "2023-01-12",
+      "portfolio_return": 0.004959077885366748,
+      "wealth_index": 0.994971727787869,
+      "currency_pnl": 490.9794239801663
+    },
+    {
+      "date": "2023-01-13",
+      "portfolio_return": -0.006930103513420738,
+      "wealth_index": 0.9880764707213721,
+      "currency_pnl": -689.5257066497014
+    },
+    {
+      "date": "2023-01-16",
+      "portfolio_return": -0.0043846733411366575,
+      "wealth_index": 0.9837440781611957,
+      "currency_pnl": -433.2392560176395
+    }
+  ],
+  "instruments": [
+    {
+      "instrument": "SYN_BANK",
+      "sector": "Financials",
+      "decimal_return": -0.011092477758575704,
+      "percent": -1.1092477758575703,
+      "currency_amount": -1109.2477758575703
+    },
+    {
+      "instrument": "SYN_ENERGY",
+      "sector": "Energy",
+      "decimal_return": -0.006049499930010284,
+      "percent": -0.6049499930010284,
+      "currency_amount": -604.9499930010284
+    },
+    {
+      "instrument": "SYN_HEALTH",
+      "sector": "Healthcare",
+      "decimal_return": -0.00749902556856128,
+      "percent": -0.7499025568561279,
+      "currency_amount": -749.902556856128
+    },
+    {
+      "instrument": "SYN_TECH",
+      "sector": "Technology",
+      "decimal_return": 0.008385081418342929,
+      "percent": 0.8385081418342929,
+      "currency_amount": 838.5081418342929
+    }
+  ],
+  "sectors": [
+    {
+      "sector": "Energy",
+      "decimal_return": -0.006049499930010284,
+      "percent": -0.6049499930010284,
+      "currency_amount": -604.9499930010284
+    },
+    {
+      "sector": "Financials",
+      "decimal_return": -0.011092477758575704,
+      "percent": -1.1092477758575703,
+      "currency_amount": -1109.2477758575703
+    },
+    {
+      "sector": "Healthcare",
+      "decimal_return": -0.00749902556856128,
+      "percent": -0.7499025568561279,
+      "currency_amount": -749.902556856128
+    },
+    {
+      "sector": "Technology",
+      "decimal_return": 0.008385081418342929,
+      "percent": 0.8385081418342929,
+      "currency_amount": 838.5081418342929
+    }
+  ],
+  "portfolio": {
+    "decimal_return": -0.01625592183880431,
+    "percent": -1.625592183880431,
+    "currency_amount": -1625.592183880431
+  },
+  "content_hash": "4f23eb01cf637c757dedc30da7105e27c9f451aa5fa754139ef4ef74f6ceb785"
+}

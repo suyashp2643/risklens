@@ -1,0 +1,4 @@
+metric,value,unit
+decimal_return,-0.175,decimal_return
+percent,-17.5,percent
+currency_amount,-17500.0,USD

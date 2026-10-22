@@ -1,0 +1,97 @@
+{
+  "format": "risklens-comparison-v1",
+  "mode": "synthetic",
+  "label": "SYNTHETIC DEMONSTRATION",
+  "classification": "compatible_difference",
+  "correction_impact": false,
+  "compatibility_passed": true,
+  "checks": {
+    "dates": true,
+    "currency": true,
+    "portfolio": true,
+    "configuration": true,
+    "engine_version": true,
+    "data_mode": true,
+    "adjustment_basis": true,
+    "calendar_assumption": true
+  },
+  "incompatibilities": [],
+  "metrics": [
+    {
+      "metric": "cumulative_return",
+      "original": -0.20230591736179016,
+      "corrected": -0.0019456485369053755,
+      "difference": 0.20036026882488478,
+      "unit": "decimal_fraction",
+      "original_unit": "decimal_fraction",
+      "corrected_unit": "decimal_fraction",
+      "difference_percentage_points": 20.03602688248848
+    },
+    {
+      "metric": "annualized_sample_volatility",
+      "original": 0.16458215813908617,
+      "corrected": 0.11397217782789498,
+      "difference": -0.05060998031119118,
+      "unit": "decimal_fraction",
+      "original_unit": "decimal_fraction",
+      "corrected_unit": "decimal_fraction",
+      "difference_percentage_points": -5.0609980311191185
+    },
+    {
+      "metric": "maximum_drawdown",
+      "original": 0.3485359748452922,
+      "corrected": 0.23258497194762495,
+      "difference": -0.11595100289766724,
+      "unit": "decimal_fraction",
+      "original_unit": "decimal_fraction",
+      "corrected_unit": "decimal_fraction",
+      "difference_percentage_points": -11.595100289766725
+    },
+    {
+      "metric": "historical_one_day_var",
+      "original": 0.011878929396705307,
+      "corrected": 0.01179731098405904,
+      "difference": -8.161841264626817e-05,
+      "unit": "decimal_fraction",
+      "original_unit": "decimal_fraction",
+      "corrected_unit": "decimal_fraction",
+      "difference_percentage_points": -0.008161841264626817
+    },
+    {
+      "metric": "historical_one_day_expected_shortfall",
+      "original": 0.020056520920516116,
+      "corrected": 0.014923887854071395,
+      "difference": -0.0051326330664447205,
+      "unit": "decimal_fraction",
+      "original_unit": "decimal_fraction",
+      "corrected_unit": "decimal_fraction",
+      "difference_percentage_points": -0.5132633066444721
+    },
+    {
+      "metric": "historical_one_day_var_currency",
+      "original": 1187.8929396705307,
+      "corrected": 1179.7310984059038,
+      "difference": -8.1618412646269,
+      "unit": "USD",
+      "original_unit": "USD",
+      "corrected_unit": "USD",
+      "difference_percentage_points": null
+    },
+    {
+      "metric": "historical_one_day_expected_shortfall_currency",
+      "original": 2005.6520920516116,
+      "corrected": 1492.3887854071395,
+      "difference": -513.2633066444721,
+      "unit": "USD",
+      "original_unit": "USD",
+      "corrected_unit": "USD",
+      "difference_percentage_points": null
+    }
+  ],
+  "confidence": 0.95,
+  "difference_convention": "corrected minus original; decimal fractions and percentage-point differences are separate",
+  "limitations": [
+    "Standalone report JSON does not prove input integrity or approved lineage.",
+    "Incompatible reports retain values but suppress differences; no correction-impact claim."
+  ]
+}

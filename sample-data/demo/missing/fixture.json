@@ -1,0 +1,9 @@
+{
+  "affected_dates": [
+    "2024-05-06"
+  ],
+  "instrument": "SYN_HEALTH",
+  "intent": "Intentionally corrupted synthetic data; not an approved correction.",
+  "kind": "missing",
+  "parent": "clean"
+}

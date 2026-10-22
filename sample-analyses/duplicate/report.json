@@ -1,0 +1,55 @@
+{
+  "format": "risklens-investigation-v1",
+  "mode": "synthetic",
+  "label": "SYNTHETIC DEMONSTRATION",
+  "input_hash": "092a9ce07671399f2f10dfa8e0b3247a7d2e3ee0c941895882747e0506b352c0",
+  "input_file_hashes": {
+    "calendar.csv": "393525f35db7751b311ac06eb1867da10bdc1ad5764f990bee3decf46c979600",
+    "corporate_actions.csv": "f67fc82e1c7cd995db67b2b5fa8f485756bacbc1945b2d95dc6af94203ecd92f",
+    "instruments.csv": "3da6064748890300aaa73f1a595fbdc0eddefa3e0c315188910805e23847d52a",
+    "portfolio.json": "279b3fc5227c7f526ff2464b0950e254fcf0ead28b0985b9417da1ab9c811a7c",
+    "prices.csv": "241b49f642c2a3c0fcf533a697fe15b0ff38c80efa61620438ea1a69aa3a069c",
+    "provenance.json": "79c02fb0434341f3404b8fa03848ffbb51a3678bec2aabf60e938d27112dfd6d"
+  },
+  "policy": {
+    "unchanged_sessions": 5,
+    "large_return_threshold": 0.2,
+    "split_relative_tolerance": 0.03
+  },
+  "dataset_valid": false,
+  "calculation_blocked": true,
+  "validation_error": "duplicate date per instrument",
+  "issues": [
+    {
+      "instrument": "SYN_ENERGY",
+      "dates": [
+        "2024-09-23"
+      ],
+      "rule": "duplicate_observation",
+      "observed_values": {
+        "records": [
+          {
+            "row_number": 1802,
+            "adjusted_close": "157.40790741"
+          },
+          {
+            "row_number": 3025,
+            "adjusted_close": "157.40790741"
+          }
+        ],
+        "count": 2
+      },
+      "category": "confirmed_integrity_error",
+      "severity": "error",
+      "calculation_blocking": true,
+      "suggested_review_action": "Reconcile duplicate source records; retain the original capture and approve a separate corrected version.",
+      "issue_id": "fe7f973b5d9828cbd2c6291e0ee96ee75c95af838b9e565fc0f4865eb3f9a189"
+    }
+  ],
+  "issue_count": 1,
+  "limitations": [
+    "No fixture metadata or clean reference is used for detection.",
+    "No prices are filled, dropped, overwritten or automatically repaired.",
+    "Suspicion does not prove an error; an explicit calendar defines expected sessions."
+  ]
+}

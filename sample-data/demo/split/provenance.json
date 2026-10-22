@@ -1,0 +1,11 @@
+{
+  "acquired_at": "2026-01-01T00:00:00Z",
+  "adjustment_basis": "Synthetic split/dividend-adjusted levels; no real corporate actions or market prices.",
+  "calendar_assumption": "756 synthetic weekday sessions; real exchange holidays deliberately not modeled.",
+  "currency": "USD",
+  "end_date": "2025-11-24",
+  "mode": "synthetic",
+  "observation_timestamps_available": false,
+  "source": "RiskLens deterministic generator v0.1.0; NumPy PCG64 seed 1729",
+  "start_date": "2023-01-02"
+}

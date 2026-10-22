@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=75,<83"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "risklens"
+version = "0.5.0"
+requires-python = ">=3.12,<3.13"
+dependencies = ["pydantic==2.13.5", "numpy==2.3.5", "pandas==2.2.3", "SQLAlchemy==2.0.44", "alembic==1.17.1", "psycopg[binary]==3.2.12"]
+
+[project.optional-dependencies]
+test = ["pytest==8.3.5"]
+
+[project.scripts]
+risklens = "risklens.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["backend/src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["backend/src"]

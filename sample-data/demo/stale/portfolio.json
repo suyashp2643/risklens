@@ -1,0 +1,24 @@
+{
+  "base_currency": "USD",
+  "convention": "constant_weight_daily_rebalanced",
+  "valuation": 100000,
+  "weights": [
+    {
+      "instrument": "SYN_TECH",
+      "weight": 0.4
+    },
+    {
+      "instrument": "SYN_BANK",
+      "weight": 0.3
+    },
+    {
+      "instrument": "SYN_HEALTH",
+      "weight": 0.2
+    },
+    {
+      "instrument": "SYN_ENERGY",
+      "weight": 0.1
+    }
+  ],
+  "weights_as_of": "2025-11-24"
+}

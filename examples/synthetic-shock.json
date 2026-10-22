@@ -1,0 +1,5 @@
+{
+  "name": "SYNTHETIC sector decline with explicit technology override",
+  "instrument_shocks": {"SYN_TECH": -0.30},
+  "sector_shocks": {"Technology": -0.20, "Financials": -0.10, "Healthcare": -0.05, "Energy": -0.15}
+}

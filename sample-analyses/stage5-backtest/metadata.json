@@ -1,0 +1,83 @@
+{
+  "stage": 5,
+  "kind": "rolling_var_backtest",
+  "engine_version": "0.2.0",
+  "analysis_version": "0.5.0",
+  "input_hash": "d3a98d4cb986c3cc40f9053077492088c3b68fe35d38cf68a04cbae91557a7cf",
+  "input_file_hashes": {
+    "prices.csv": "f8cafb9b65125f504a2cd9d1eba641233ad0dc205dcbc9b9ea855532868c3e14",
+    "instruments.csv": "3da6064748890300aaa73f1a595fbdc0eddefa3e0c315188910805e23847d52a",
+    "calendar.csv": "393525f35db7751b311ac06eb1867da10bdc1ad5764f990bee3decf46c979600",
+    "corporate_actions.csv": "f67fc82e1c7cd995db67b2b5fa8f485756bacbc1945b2d95dc6af94203ecd92f",
+    "portfolio.json": "279b3fc5227c7f526ff2464b0950e254fcf0ead28b0985b9417da1ab9c811a7c",
+    "provenance.json": "79c02fb0434341f3404b8fa03848ffbb51a3678bec2aabf60e938d27112dfd6d"
+  },
+  "mode": "synthetic",
+  "label": "SYNTHETIC DEMONSTRATION \u2014 fictional prices and securities",
+  "portfolio_definition": {
+    "base_currency": "USD",
+    "valuation": 100000.0,
+    "weights_as_of": "2025-11-24",
+    "convention": "constant_weight_daily_rebalanced",
+    "weights": [
+      {
+        "instrument": "SYN_TECH",
+        "weight": 0.4
+      },
+      {
+        "instrument": "SYN_BANK",
+        "weight": 0.3
+      },
+      {
+        "instrument": "SYN_HEALTH",
+        "weight": 0.2
+      },
+      {
+        "instrument": "SYN_ENERGY",
+        "weight": 0.1
+      }
+    ]
+  },
+  "limitations": [
+    "Synthetic timestamps do not reconstruct the historical information set.",
+    "No costs, taxes, liquidity or FX simulation; supplied current weights are hypothetical historical holdings.",
+    "Small evaluation samples and small expected exception counts weaken asymptotic coverage inference.",
+    "A high Kupiec p-value is not proof of reliability or exception independence."
+  ],
+  "provenance": {
+    "mode": "synthetic",
+    "source": "RiskLens deterministic generator v0.1.0; NumPy PCG64 seed 1729",
+    "acquired_at": "2026-01-01T00:00:00Z",
+    "currency": "USD",
+    "start_date": "2023-01-02",
+    "end_date": "2025-11-24",
+    "adjustment_basis": "Synthetic split/dividend-adjusted levels; no real corporate actions or market prices.",
+    "calendar_assumption": "756 synthetic weekday sessions; real exchange holidays deliberately not modeled.",
+    "observation_timestamps_available": false
+  },
+  "configuration": {
+    "confidence": 0.95,
+    "lookback": 250,
+    "horizon_days": 1,
+    "quantile_method": "empirical_inverse_cdf",
+    "minimum_observations": 100,
+    "minimum_tail_observations": 5,
+    "loss_sign": "loss = -simple_return; negative VaR retained",
+    "exception_rule": "realized_loss > var; ties are not exceptions",
+    "units": "decimal fractions; 0.01 = 1%",
+    "test_distribution": "asymptotic chi-square, 1 degree of freedom"
+  },
+  "summary": {
+    "observations": 505,
+    "exception_count": 30,
+    "exception_rate": 0.0594059405940594,
+    "expected_exception_count": 25.25000000000002,
+    "kupiec": {
+      "likelihood_ratio": 0.8894592459375019,
+      "p_value": 0.3456238891838988,
+      "degrees_of_freedom": 1,
+      "method": "Kupiec unconditional coverage; asymptotic chi-square"
+    }
+  },
+  "content_hash": "d7a0ba9ea6248402450cd5f125bc69baaac18a6d8feab2bba5174c9b5be69622"
+}
